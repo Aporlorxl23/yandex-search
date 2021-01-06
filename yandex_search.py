@@ -8,7 +8,7 @@ import requests, argparse
 from bs4 import BeautifulSoup
 
 def main():
-    header = {"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0"}
+    header = {"User-Agent":"Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"}
     for page in range(0,depth):
         search = main_Url+"&p="+str(page)
         response = requests.get(search,headers=header)
