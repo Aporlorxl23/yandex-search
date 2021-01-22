@@ -40,7 +40,7 @@ def main():
 if __name__ == "__main__":
     Parser = argparse.ArgumentParser(description="A.Baran Ertemir & Eren Şimşek <Aporlorxl23> Yandex Search Script")
     Parser.add_argument("-k","--keyword",required=True,type=str,help="Search Keyword")
-    Parser.add_argument("-d","--depth",required=False,default=5,type=int,help="Depth Number")
+    Parser.add_argument("-d","--depth",required=False,default=1,type=int,help="Depth Number")
     Parser.add_argument("-o","--output",required=False,default="",type=str,help="Output File")
     Args = Parser.parse_args()
     keyword = Args.keyword
